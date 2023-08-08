@@ -1,0 +1,113 @@
+:root {
+	font-size: 16px;
+	--coloror-border: #d6d6d6;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	font-size: 1.2rem;
+	transition: 0.5s all ease;
+	text-decoration: none;
+	color: #565656;
+}
+a:hover {
+	color: #fa0606;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #bbbbbb;
+}
+
+#workspace {
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+}
+
+#wrap {
+	margin: 0 0 -50px 0;
+	padding: 0 0 50px 0;
+	min-height: 100%;
+	background-color: white;
+	position: relative;
+	z-index: 1;
+}
+
+#vertical {
+	/*  Подложка для левой части  */
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: whitesmoke;
+	border-right: 1px solid var(--coloror-border);
+	z-index: -1;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-color: whitesmoke;
+	z-index: 1;
+}
+
+header .header-top {
+	height: 80px;
+	border-bottom: 1px solid var(--coloror-border);
+}
+
+header .header {
+	padding: 12px 0 10px 0;
+	border-bottom: 1px solid var(--coloror-border);
+}
+
+header .header img {
+	height: 38px;
+}
+
+main .left-menu p {
+	height: 50px;
+	background-color: #529090;
+	border-radius: 5px 5px 0 0;
+	font-size: 1.125rem;
+	color: white;
+}
+
+main .left-menu .menu {
+	background-color: white;
+	border-left: 1px solid var(--coloror-border);
+	border-right: 1px solid var(--coloror-border);
+	border-bottom: 1px solid var(--coloror-border);
+	border-radius: 0 0 5px 5px;
+}
+
+main .content {
+	margin: 0 0 49px 0;
+	padding: 0 0 5px 0;
+}
+
+.form-address {
+	border: 1px solid var(--coloror-border);
+	border-radius: 5px;
+}
+
+footer {
+	height: 50px;
+	padding: 0;
+	background-color: whitesmoke;
+	border-top: 1px solid var(--coloror-border);
+	text-align: center;
+	font-size: 0.8rem;
+	/*color: #E5E5E5;*/
+	z-index: 1;
+}
